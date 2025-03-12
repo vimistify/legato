@@ -1,0 +1,75 @@
+/* Background for Landing Page */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  /* Clickable Box */
+  .box {
+    background: rgb(75, 74, 74);
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .box:hover {
+    background: gray;
+  }
+  
+  /* Loader */
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-top: 5px solid gray;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom cursor particle */
+.cursor-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 105, 180, 0.8); /* Light pink color */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+/* Cursor trail effect */
+.cursor-trail {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 182, 193, 0.5); /* Lighter pink */
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeTrail 0.6s ease-out;
+}
+
+@keyframes fadeTrail {
+  from {
+      opacity: 1;
+      transform: scale(1);
+  }
+  to {
+      opacity: 0;
+      transform: scale(2);
+  }
+}
