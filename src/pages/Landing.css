@@ -1,0 +1,41 @@
+/* Full-screen dark background */
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+  }
+  
+  /* Animated box */
+  .box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* LEGATO text */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Loading screen */
+  .loader {
+    font-size: 20px;
+    color: white;
+  }
+  

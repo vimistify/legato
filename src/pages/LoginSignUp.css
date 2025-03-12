@@ -1,0 +1,106 @@
+/* src/pages/LoginSignUp.css */
+.auth-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: white;
+    overflow: hidden;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.slider {
+    width: 400px;
+    padding: 40px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5px;
+    background: #292929;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+button {
+    margin-top: 4px;
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #26d8df;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1ab9c0;
+}
+
+p {
+    cursor: pointer;
+    color: #4bbfdb;
+    text-align: center;
+    font-size: 14px;
+}
+
+.image-container {
+    width: 40%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .slider {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

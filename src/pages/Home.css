@@ -1,0 +1,346 @@
+/* ========================= */
+/*        Global Styles      */
+/* ========================= */
+:root {
+    --primary-pink: #ff6ec7;
+    --secondary-pink: #ffb6c1;
+    --background: #fff0f5;
+    --text-dark: #333;
+    --gradient: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+}
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Wrapper to prevent navbar collision */
+.home-wrapper {
+    padding-top: 120px;
+}
+
+/* ========================= */
+/*       Hero Section       */
+/* ========================= */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 2rem;
+    position: relative;
+    background: var(--gradient);
+    color: white;
+}
+
+/* Hero Content */
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.legato-text {
+    background: -webkit-linear-gradient(left, #ff1493, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* Get Started Button */
+.get-started {
+    margin-top: 30px;
+}
+
+.hero-btn {
+    background: #ff1493;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background: #ff69b4;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/*     Floating Elements    */
+/* ========================= */
+.floating-shape, .floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    backdrop-filter: blur(12px);
+}
+
+.floating-shape {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    top: 22%;
+    left: 8%;
+}
+
+.floating-circle {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: 12%;
+    right: 12%;
+}
+
+/* ========================= */
+/*      Features Section    */
+/* ========================= */
+.features {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/*       FAQ Section        */
+/* ========================= */
+.faq {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #fff;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* ========================= */
+/*        Footer            */
+/* ========================= */
+.footer {
+    background: var(--primary-pink);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+/* Footer container layout */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+/* Footer Sections */
+.footer-section {
+    max-width: 250px;
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ Legato Description */
+.legato-description {
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* Quick Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff1493;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background: #ff1493;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #ff69b4;
+}
+
+/* ✅ Contact Section (White Text) */
+.footer-contact p {
+    color: white; /* Ensure text is white */
+    margin: 5px 0;
+}
+
+/* ✅ Copyright at the Bottom */
+.footer-copy {
+    margin-top: 40px; /* Increased spacing */
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+    color:#fff;
+}
+
+
+
+
+
+/* ✅ Scroll-to-Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 10px;  /* Lowered for better footer placement */
+    right: 15px;  /* Adjusted closer to the corner */
+    width: 40px;  /* Reduced size */
+    height: 40px;  /* Ensures a perfect circle */
+    background: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* ✅ Hover Effect */
+.scroll-top:hover {
+    background: #ff69b4;
+    transform: scale(1.1);
+}
+
+/* ✅ Hide Button by Default and Show on Scroll */
+.scroll-top.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
